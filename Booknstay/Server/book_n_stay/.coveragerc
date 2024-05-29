@@ -1,0 +1,9 @@
+[run]
+omit =
+    /usr/lib/python3/dist-packages/*
+    book_n_stay/settings.py
+    manage.py
+    user_app/migrations/*
+    user_app/tests.py
+    hotel_app/migrations/*
+    hotel_app/tests.py

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Account</title>
+    <style>
+        .outer-card {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            text-align: center; 
+            height: 400px; 
+            overflow: hidden;
+        }
+        .inner-card {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .inner-card p {
+            margin-bottom: 10px;
+            font-size: 14px; 
+            text-align: left; 
+        }
+        .button-container {
+            text-align: center; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px; 
+            cursor: pointer;
+        }
+        .thanks-regards-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .thanks-regards {
+            font-size: 14px;
+            text-align: right;
+        }
+        .link {
+            color: #3498db;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-card">
+        <h2>BooknStay</h2>
+        <div class="inner-card">
+            <p>Hi {{ name }},</p>
+            <p>You registered an account on BooknStay. Before being able to use your account, you need to verify that this is your email address by clicking the button below:</p>
+            <div class="button-container">
+                <a href="{{ link }}" class="button">Verify Email</a>
+            </div>
+            <p>If the button above does not work, you can also click on the following link: <span class="link">{{ link }}</span></p>
+ 
+        <div class="thanks-regards-container">
+            <p class="thanks-regards">Thanks & regards,</p>
+            <p class="thanks-regards">BooknStay Team</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

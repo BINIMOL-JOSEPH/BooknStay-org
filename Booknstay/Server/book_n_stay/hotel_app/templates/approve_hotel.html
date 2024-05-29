@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Confirmation</title>
+    <style>
+        .outer-card {
+            background-color: #f2f2f2;
+            padding: 40px;
+            text-align: center;
+            height: 400px;
+            overflow: hidden; 
+        }
+        .inner-card {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 20px;
+            background-color: #ffffff; 
+            text-align: center; 
+            display: inline-block;
+        }
+        .inner-card p {
+            margin-bottom: 10px;
+            font-size: 14px; 
+            text-align: left; 
+        }
+        .button-container {
+            text-align: center; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px; 
+        }
+        .thanks-regards-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .thanks-regards {
+            font-size: 14px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-card">
+        <h2>BooknStay</h2>
+        <div class="inner-card">
+            <p>Hi {{ name }},</p>
+            <p>You registered an account on BooknStay. Your account has been verified and activated. You are ready to log in to the application with your registered email id and password. 😊</p>
+            <div class="button-container">
+                <a href="{{ link }}" class="button">Login</a>
+            </div>
+            <p>If the button above does not work, you can also click on the following link: <a href="{{ link }}">{{ link }}</a></p>
+            <div class="thanks-regards-container">
+                <p class="thanks-regards">Thanks & regards,</p>
+                <p class="thanks-regards">BooknStay Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

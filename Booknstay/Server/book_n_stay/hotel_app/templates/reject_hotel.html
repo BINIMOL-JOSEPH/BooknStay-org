@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Rejection</title>
+    <style>
+         .outer-card {
+            background-color: #f2f2f2;
+            padding: 40px;
+            text-align: center;
+            height: 300px;
+            overflow: hidden; 
+        }
+        .inner-card {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            padding: 20px;
+            background-color: #ffffff; 
+            text-align: center; 
+            display: inline-block;
+        }
+        .inner-card p {
+            margin-bottom: 10px;
+            font-size: 14px; 
+            text-align: left; 
+        }
+        .thanks-regards-container {
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-card">
+        <h2>BooknStay</h2>
+        <div class="inner-card">
+            <p>Hi {{ name }},</p>
+            <p>We regret to inform you that your registration request on BooknStay has been rejected. 😞</p>
+            <div class="thanks-regards-container">
+                <p>Thanks & regards,</p>
+                <p>BooknStay Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

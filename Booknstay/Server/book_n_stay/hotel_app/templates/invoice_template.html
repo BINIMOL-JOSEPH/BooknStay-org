@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+       * {
+  box-sizing: border-box;
+}
+h1{
+  text-align: 'center';
+ 
+  background-color: black;
+  color: white;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+    padding: 100px;
+    text-align: center;
+    width: 100%;
+  }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Payment Invoice</h1>
+        <p>Date: {{ currentDate }}</p>
+        <p>Place: {{hotel.city}}</p>
+        
+        <h2>Payment Details</h2>
+        <table>
+          <caption></caption>
+            <tr>
+                <th>Payment ID</th>
+                <td>{{ payment.id }}</td>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td>{{ payment.amount }}</td>
+            </tr>
+            <tr>
+                <th>Payment Method</th>
+                <td>{{ payment.payment_method }}</td>
+            </tr>
+            <tr>
+                <th>Paid At</th>
+                <td>{{ payment.paid_at }}</td>
+            </tr>
+            <tr>
+              <th>Payment Status</th>
+              <td>{{ payment.status }}</td>
+          </tr>
+        </table>
+        
+        <h2>Booking Details</h2>
+        <table>
+          <caption></caption>
+            <tr>
+                <th>Booking ID</th>
+                <td>{{ booking.id }}</td>
+            </tr>
+            <tr>
+                <th>Guest Name</th>
+                <td>{{ booking.guest_name }}</td>
+            </tr>
+            <tr>
+                <th>Number of Rooms</th>
+                <td>{{ booking.number_of_rooms }}</td>
+            </tr>
+            <tr>
+                <th>Check-in Date</th>
+                <td>{{ booking.check_in_date }}</td>
+            </tr>
+            <tr>
+                <th>Check-out Date</th>
+                <td>{{ booking.check_out_date }}</td>
+            </tr>
+            <tr>
+                <th>Booked At</th>
+                <td>{{ booking.booked_at }}</td>
+            </tr>
+            <tr>
+              <th>Booking Status</th>
+              <td>{{ booking.status }}</td>
+          </tr>
+        </table>
+        
+        <h2>Hotel Details</h2>
+        <table>
+          <caption></caption>
+            <tr>
+                <th>Hotel Name</th>
+                <td>{{ hotel.hotel_name }}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{ hotel.address }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ hotel.email }}</td>
+            </tr>
+            <tr>
+                <th>Contact</th>
+                <td>{{ hotel.phone_number }}</td>
+            </tr>
+        </table>
+        <footer>
+          <p>Thank you for using our service.<br/>
+          Copyright ©Booknstay {{currentYear}}</p>
+        </footer>
+    </div>
+</body>
+</html>

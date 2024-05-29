@@ -1,0 +1,39 @@
+# created by virtualenv automatically
+
+*.pyc
+__pycache__/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Secret key
+/env
+
+# Media files (uploaded user content)
+media/
+
+# Static files (collectstatic)
+static/
+
+# Temporary files
+*.pyo
+*.pyc
+*.pyd
+*.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Configuration files
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Local development settings
+local_settings.py
+
+# Dependency directories
+node_modules/
